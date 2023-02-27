@@ -1,4 +1,4 @@
-.boarderContainer{
+.boarder--container{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 @media screen and (min-width: 769px){
-    .clockContainer {
+    .clock--container {
         display: flex;
         flex-direction: row;
         width: 100%;
