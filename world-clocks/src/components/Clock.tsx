@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+
+const timeFunc = (time : Date) => {
+    return (`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
+}
 const Clock = () => {
-    return (<h1>Clock</h1>);
+    const [time, setTime] = useState(new Date())
+    return (<h1>{timeFunc(time)}</h1>);
 }
 
 export default Clock;
