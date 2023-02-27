@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react';
-
-
-const timeFunc = (time : Date) => {
-    return (`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
+type clockProps = {
+    timeZone : string
 }
 
-const Clock = () => {
-    const [time, setTime] = useState(new Date())
-    /* useEffect(() => {
-        setTime(new Date())
-    },[time]) */
+const Clock = (props : clockProps ) => {
+    const [time, setTime] = useState(new Date().toLocaleTimeString('en-GB', {timeZone : props.timeZone}))
     setTimeout(() => {
-        setTime(new Date())
+        setTime(new Date().toLocaleTimeString('en-GB', {timeZone : props.timeZone}))
     },1000)
-    return (<h1>{timeFunc(time)}</h1>);
+    /*useEffect(() => {
+        setTime(new Date().toLocaleTimeString('en-GB', {timeZone : props.timeZone}))
+    },[])*/
+    return (<h1>{time}</h1>);
 }
 
 export default Clock;
