@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import './clockStyle.css';
 type clockProps = {
     timeZone : string
+    city: string
 }
 
 const Clock = (props : clockProps ) => {
@@ -11,7 +13,13 @@ const Clock = (props : clockProps ) => {
     /*useEffect(() => {
         setTime(new Date().toLocaleTimeString('en-GB', {timeZone : props.timeZone}))
     },[])*/
-    return (<h1>{time}</h1>);
+    return (
+        <div className="clockWrapper">
+          <h2>{time}</h2>
+          <h2> {props.city}</h2>
+        </div>
+
+    );
 }
 
 export default Clock;
