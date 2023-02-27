@@ -17,3 +17,26 @@
     color: white;
 }
 
+.addClock {
+    display: flex;
+    align-self: flex-start;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    background-color: #61dafb;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 769px){
+    .clockContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 20px;
+    }
+}
+
