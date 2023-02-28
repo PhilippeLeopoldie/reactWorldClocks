@@ -14,8 +14,9 @@ test('renders Europe/paris', () => {
 test('render clock component', () => {
     const result = render(<Board/>);
     //const element = result.container.getElementsByTagName('Clock');
-    const clockComponenmt = screen.getAllByText('test')
-    expect(clockComponenmt.length).toBe(5);
+    //const clockComponenmt = screen.getAllByText('clockWrapper')
+    const element = result.container.getElementsByClassName('clockWrapper');
+    expect(element.length).toBe(5);
 });
 
 test('render clock component', () => {
