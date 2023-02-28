@@ -17,6 +17,7 @@ const Clock = (props : clockProps ) => {
         <div className="clockWrapper">
           <h2>{time}</h2>
           <h2> {props.city}</h2>
+          <h2>test</h2>
         </div>
 
     );
