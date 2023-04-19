@@ -1,5 +1,5 @@
 
-#React World Clocks
+# React World Clocks
 
 ## This is a KATA
 
