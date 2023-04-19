@@ -1,4 +1,5 @@
-# React World Clocks
+
+# KATA: React World Clocks
 
 ## A. Scenario
 
