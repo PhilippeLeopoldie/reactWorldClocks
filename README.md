@@ -1,7 +1,7 @@
 
 #React World Clocks
 
-#This is a KATA
+## This is a KATA
 
 ## A. Scenario
 
